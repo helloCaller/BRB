@@ -9,32 +9,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
   </head>
   <body style="margin : 0px; overflow: hidden;">
-    <!-- <a-scene embedded arjs>
+    <a-scene  embedded arjs>
         <a-assets>
-            <video crossorigin="anonymous" id="videoID" src="./troy2.mp4"> 
+            <video crossorigin="anonymous" id="videoID" autoplay loop="true" src="https://arjs-cors-proxy.herokuapp.com/https://rawcdn.githack.com/helloCaller/helloCaller.github.io/c99cbf362440c1a63af4b2ce07f4686b6721b13a/troy3.mp4"> 
               
             </video> 
         </a-assets>
-      <a-marker preset="hiro">
+      <a-marker vidhandler preset="hiro">
        
           
-        <a-video src="#videoID" width="1.4375" height="1" rotation="270 0 0"></a-video>
+        <a-video src="#videoID" width="1.4375" height="1" rotation="270 0 0" play="true"></a-video>
       </a-marker>
       <a-entity camera></a-entity>
-    </a-scene> -->
-
-    <a-scene>
-        
-            <a-assets>
-              <video id="penguin-sledding" crossorigin="anonymous" autoplay loop="true" src="https://rawcdn.githack.com/helloCaller/helloCaller.github.io/c99cbf362440c1a63af4b2ce07f4686b6721b13a/troy3.mp4"></video>
-            </a-assets>
-          
-            <!-- Using the asset management system. -->
-            <a-video src="#penguin-sledding" width="16" height="9" position="0 0 -20"></a-video>
-          
-       
-          
     </a-scene>
+
+
+    <script src="video.js"></script>
   </body>
 </html>
 

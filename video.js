@@ -17,3 +17,7 @@ AFRAME.registerComponent('vidhandler', {
       }
   }
 });
+
+
+
+   
