@@ -25,7 +25,6 @@ function addPage(page, book) {
 function loadPage(page, pageElement) {
 
 	// Create an image element
-
 	var img = $('<img />');
 
 	img.mousedown(function(e) {
